@@ -10,7 +10,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
-from py_mini_racer import py_mini_racer
+from py_mini_racer import MiniRacer
+
 from tqdm import tqdm
 from jsonpath import jsonpath
 
@@ -316,7 +317,7 @@ def ths_header():
     file= Path(__file__).parent/"ths.js"
     with open(file) as f:
         js_data = f.read()
-    js_code = py_mini_racer.MiniRacer()
+    js_code = MiniRacer()
     js_code.eval(js_data)
     v_code = js_code.call("v")
     headers = {
