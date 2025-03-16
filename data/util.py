@@ -8,7 +8,7 @@ import time
 import requests
 import pandas as pd
 from pathlib import Path
-from py_mini_racer import py_mini_racer
+from py_mini_racer import MiniRacer
 
 
 # 东方财富网网页请求头
@@ -147,7 +147,7 @@ js_str = """
             }  
 """
 random_time_str = str(int(time.time()))
-js_code = py_mini_racer.MiniRacer()
+js_code = MiniRacer()
 js_code.eval(js_str)
 mcode = js_code.call("mcode", random_time_str)
 
@@ -512,7 +512,7 @@ def ths_header():
     file= Path(__file__).parent/"ths.js"
     with open(file) as f:
         js_data = f.read()
-    js_code = py_mini_racer.MiniRacer()
+    js_code = MiniRacer()
     js_code.eval(js_data)
     v_code = js_code.call("v")
     headers = {
