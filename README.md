@@ -4,7 +4,7 @@ qstock由“Python金融量化”公众号开发，试图打造成个人量化�
 
 读者直接在cmd或anaconda prompt上输入“pip install qstock ”进行安装，或输入“pip install -upgrade qstock”进行更新。
 
-qstock是免费开源金融量化库，已在pypi官网和GitHub上发布，更新至1.3.7版本，修改了之前realtime_data接口200的限制，修正某些数据报错的接口，可以正常使用问财功能（要把pywencai升级到最新，使用pip install --upgrade pywencai)，然后需要下载安装node.js（Node.js — Download Node.js®），安装好后打开node.js，在界面输入“npm install jsdom"。添加了问财的数据访问功能，通过qstock.wencai('选股条件')调用。使用“pip install qstock ”进行安装，通过’pip install –upgrade qstock’进行更新。目前部分策略选股和策略回测功能仅供知识星球会员使用，会员可在知识星球置顶帖子上获取 qstock 的离线安装包。
+qstock是免费开源金融量化库，已在pypi官网和GitHub上发布，更新至1.3.8版本，修改了之前realtime_data接口200的限制，修正某些数据报错的接口，可以正常使用问财功能（要把pywencai升级到最新，使用pip install --upgrade pywencai)，然后需要下载安装node.js（Node.js — Download Node.js®），安装好后打开node.js，在界面输入“npm install jsdom"。添加了问财的数据访问功能，通过qstock.wencai('选股条件')调用。使用“pip install qstock ”进行安装，通过’pip install –upgrade qstock’进行更新。目前部分策略选股和策略回测功能仅供知识星球会员使用，会员可在知识星球置顶帖子上获取 qstock 的离线安装包。
 
 
 
